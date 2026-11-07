@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Portfolio &amp; Systems Architecture — AZ IT HUB</title>
+  
+  <meta name="description" content="Technical portfolio and architectural case implementations across ERP customization, logistics dispatch, e-invoicing pipelines, and custom software systems.">
+  <meta name="author" content="Osman Bin Abubakar">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Technical Portfolio — AZ IT HUB",
+    "description": "Architectural case studies and systems engineered by Osman Bin Abubakar.",
+    "publisher": {
+      "@type": "ProfessionalService",
+      "name": "AZ IT HUB",
+      "founder": "Osman Bin Abubakar"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div class="aurora-bg"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="island-nav-wrapper">
+    <div class="island-nav">
+      <a href="index.html" class="nav-brand" aria-label="AZ IT HUB">
+        <div class="brand-symbol">AZ</div>
+        <span>AZ IT HUB</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="services.html" class="nav-item">Services</a>
+        <a href="industries.html" class="nav-item">Industries</a>
+        <a href="portfolio.html" class="nav-item active">Portfolio</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn-beam">
+          <span>Discuss Project</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <button class="menu-trigger" id="menuTrigger" aria-label="Open Mobile Menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="8" x2="20" y2="8"></line><line x1="4" y1="16" x2="20" y2="16"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+    <button class="mobile-close" id="mobileClose" aria-label="Close Mobile Menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="mobile-links">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="services.html" class="mobile-link">Services</a>
+      <a href="industries.html" class="mobile-link">Industries</a>
+      <a href="portfolio.html" class="mobile-link active">Portfolio</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div style="max-width: 860px;">
+          <div class="status-badge">
+            <span class="ping-dot"></span>
+            PROVEN WORKFLOWS
+          </div>
+          <h1 class="hero-heading">
+            <span class="gradient-metallic">SYSTEM ARCHITECTURES.</span><br>
+            <span class="gradient-orange">TECHNICAL IMPLEMENTATIONS.</span>
+          </h1>
+          <p class="hero-paragraph">
+            Representative software workflows, enterprise data pipelines, and operational applications developed by Osman Bin Abubakar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" style="padding-top: 0;">
+      <div class="container">
+        <div class="bento-grid">
+
+          <!-- Project 1: Chauffeur & Fleet Coordination -->
+          <article class="spotlight-card bento-col-6">
+            <div class="card-content">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="bento-badge" style="margin-bottom: 0;">Mobility &amp; Operations</span>
+                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-faint);">Case Architecture</span>
+              </div>
+              <h2 class="bento-title" style="font-size: 1.35rem;">Chauffeur &amp; Fleet Coordination System</h2>
+              <p class="bento-desc">
+                Centralized dispatching and ride coordination backend engineered to eliminate verbal driver assignments and manual passenger trip auditing.
+              </p>
+              
+              <div style="margin: 1.25rem 0;">
+                <h3 style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 0.4rem; text-transform: uppercase;">Technical Highlights</h3>
+                <ul class="service-features" style="border: none; padding: 0;">
+                  <li>Shift scheduling and driver status concurrency tracking</li>
+                  <li>Automated passenger route distance logging and billing rates</li>
+                  <li>Role-based administrative dashboards for fleet supervisors</li>
+                </ul>
+              </div>
+
+              <div class="tech-chips">
+                <span class="chip">ASP.NET Core</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">REST API</span>
+                <span class="chip">Driver UI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Odoo Custom Inventory & Order Pipeline -->
+          <article class="spotlight-card bento-col-6">
+            <div class="card-content">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="bento-badge" style="margin-bottom: 0;">Enterprise ERP</span>
+                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-faint);">Modular Implementation</span>
+              </div>
+              <h2 class="bento-title" style="font-size: 1.35rem;">Odoo Custom Inventory &amp; Order Pipeline</h2>
+              <p class="bento-desc">
+                Custom Python modules extending standard Odoo ORM workflows to support complex multi-warehouse replenishment and structured sales verification gates.
+              </p>
+              
+              <div style="margin: 1.25rem 0;">
+                <h3 style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 0.4rem; text-transform: uppercase;">Technical Highlights</h3>
+                <ul class="service-features" style="border: none; padding: 0;">
+                  <li>Custom stock transfer logic between remote storage locations</li>
+                  <li>Automated purchase order creation based on dynamic thresholds</li>
+                  <li>Tailored QWeb dispatch delivery slips and picking manifests</li>
+                </ul>
+              </div>
+
+              <div class="tech-chips">
+                <span class="chip">Python</span>
+                <span class="chip">Odoo 16/17</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">QWeb</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: E-Invoicing & Compliance Engine -->
+          <article class="spotlight-card bento-col-6">
+            <div class="card-content">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="bento-badge" style="margin-bottom: 0;">Compliance &amp; Finance</span>
+                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-faint);">System Integration</span>
+              </div>
+              <h2 class="bento-title" style="font-size: 1.35rem;">E-Invoicing &amp; Transaction Validation Engine</h2>
+              <p class="bento-desc">
+                Validation middleware designed to ingest point-of-sale and sales ledger records, transform data into schema-compliant XML, and archive transaction hashes.
+              </p>
+              
+              <div style="margin: 1.25rem 0;">
+                <h3 style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 0.4rem; text-transform: uppercase;">Technical Highlights</h3>
+                <ul class="service-features" style="border: none; padding: 0;">
+                  <li>Strict XSD schema verification preventing malformed filings</li>
+                  <li>Cryptographic hash generation and sequential UUID chain logging</li>
+                  <li>Integration with existing ERP accounting journals</li>
+                </ul>
+              </div>
+
+              <div class="tech-chips">
+                <span class="chip">C# .NET</span>
+                <span class="chip">XML / JSON</span>
+                <span class="chip">ZATCA Compliant</span>
+                <span class="chip">REST Webhooks</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Workforce Scheduling & Shift Tracking -->
+          <article class="spotlight-card bento-col-6">
+            <div class="card-content">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="bento-badge" style="margin-bottom: 0;">Human Capital</span>
+                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-faint);">Internal Architecture</span>
+              </div>
+              <h2 class="bento-title" style="font-size: 1.35rem;">Workforce Scheduling &amp; Shift Reconciliation</h2>
+              <p class="bento-desc">
+                Operational roster management tool designed for organizations managing multi-shift field employees, maintenance crews, and physical facilities.
+              </p>
+              
+              <div style="margin: 1.25rem 0;">
+                <h3 style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 0.4rem; text-transform: uppercase;">Technical Highlights</h3>
+                <ul class="service-features" style="border: none; padding: 0;">
+                  <li>Conflict detection engine checking maximum allowable shift hours</li>
+                  <li>Real-time attendance reconciliation with leave balances</li>
+                  <li>Consolidated export streams for payroll calculation</li>
+                </ul>
+              </div>
+
+              <div class="tech-chips">
+                <span class="chip">Node.js</span>
+                <span class="chip">Express</span>
+                <span class="chip">MongoDB</span>
+                <span class="chip">React</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Multi-Carrier Shipping Middleware -->
+          <article class="spotlight-card bento-col-6">
+            <div class="card-content">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="bento-badge" style="margin-bottom: 0;">Logistics Middleware</span>
+                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-faint);">API Infrastructure</span>
+              </div>
+              <h2 class="bento-title" style="font-size: 1.35rem;">Carrier Tracking &amp; Waybill Sync Service</h2>
+              <p class="bento-desc">
+                API bridge that normalizes parcel booking endpoints across regional logistics carriers into a standard JSON contract for warehouse packing teams.
+              </p>
+              
+              <div style="margin: 1.25rem 0;">
+                <h3 style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 0.4rem; text-transform: uppercase;">Technical Highlights</h3>
+                <ul class="service-features" style="border: none; padding: 0;">
+                  <li>Automatic tracking number generation and thermal label printing</li>
+                  <li>Polling worker queuing status updates and delivery failures</li>
+                  <li>Unified tracking query endpoint for client customer portals</li>
+                </ul>
+              </div>
+
+              <div class="tech-chips">
+                <span class="chip">TypeScript</span>
+                <span class="chip">Carrier APIs</span>
+                <span class="chip">Queue Workers</span>
+                <span class="chip">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Customer & Vendor Access Portal -->
+          <article class="spotlight-card bento-col-6">
+            <div class="card-content">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <span class="bento-badge" style="margin-bottom: 0;">Portals &amp; UI</span>
+                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-faint);">Web Application</span>
+              </div>
+              <h2 class="bento-title" style="font-size: 1.35rem;">Self-Service Client &amp; Vendor Portal</h2>
+              <p class="bento-desc">
+                Secure web portal providing external corporate clients and vendors with real-time access to order statuses, invoices, and support logs.
+              </p>
+              
+              <div style="margin: 1.25rem 0;">
+                <h3 style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent); margin-bottom: 0.4rem; text-transform: uppercase;">Technical Highlights</h3>
+                <ul class="service-features" style="border: none; padding: 0;">
+                  <li>JWT-based session authentication with strict tenant isolation</li>
+                  <li>Direct PDF invoice generation and transaction history queries</li>
+                  <li>Mobile-responsive interface built with accessible UI tokens</li>
+                </ul>
+              </div>
+
+              <div class="tech-chips">
+                <span class="chip">React</span>
+                <span class="chip">Next.js</span>
+                <span class="chip">Tailwind Tokens</span>
+                <span class="chip">JWT Auth</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" style="padding-top: 0;">
+      <div class="container">
+        <div class="spotlight-card" style="text-align: center; padding: 4.5rem 2rem;">
+          <div class="card-content">
+            <span class="bento-badge">Direct Execution</span>
+            <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; letter-spacing: -0.03em; margin-bottom: 1rem;">
+              Have a Similar Architecture in Mind?
+            </h2>
+            <p style="font-size: 1.05rem; color: var(--text-muted); max-width: 580px; margin: 0 auto 2.25rem;">
+              Discuss system requirements, database schema design, or API integration pipelines directly.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn-beam">
+                <span>Start Direct Discussion</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="services.html" class="btn-ghost">
+                <span>Review Capabilities</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top: 1px solid var(--border-subtle); padding: 3rem 0; font-size: 0.85rem; color: var(--text-faint);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        &copy; <span id="currentYear"></span> AZ IT HUB — Osman Bin Abubakar.
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.78rem;">
+        HEADLESS STATIC ARCHITECTURE • GITHUB PAGES DEPLOYED
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
