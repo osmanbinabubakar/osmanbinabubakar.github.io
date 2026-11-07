@@ -77,30 +77,29 @@ This repository serves two primary objectives:
 
 To eliminate runtime server dependencies, subscription costs, and cold-start latency while maintaining complete separation of concerns, this platform runs on a **Headless Static JSON Architecture**.
 
----
-
+```text
 osmanbinabubakar.github.io/
-├── index.html # Presentation Shell (Home & Live System Visualizer)
-├── about.html # Executive Profile, Manifesto & Pillars
-├── services.html # Technical Service Specifications & Scopes
-├── industries.html # Domain Solutions & Industry Workflows
-├── portfolio.html # Verified Architecture Case Studies
-├── contact.html # Direct Channels & Client Inquiry Compiler
-├── robots.txt # Search Engine Indexing Directives
-├── sitemap.xml # Canonical Search Index Mapping
+├── index.html              # Presentation Shell (Home & Live System Visualizer)
+├── about.html              # Executive Profile, Manifesto & Pillars
+├── services.html           # Technical Service Specifications & Scopes
+├── industries.html         # Domain Solutions & Industry Workflows
+├── portfolio.html          # Verified Architecture Case Studies
+├── contact.html            # Direct Channels & Client Inquiry Compiler
+├── robots.txt              # Search Engine Indexing Directives
+├── sitemap.xml             # Canonical Search Index Mapping
 ├── assets/
-│ ├── css/
-│ │ └── style.css # High-Fidelity Design System (Bento / Aurora / Spotlight)
-│ ├── js/
-│ │ ├── script.js # UI Controllers (Pointer Spotlight, Drawer Traps, Year Sync)
-│ │ └── render.js # Asynchronous Data Hydrator with Strict XSS Sanitization
-│ └── images/
-│ └── hero-preview.png # Live Platform Visual Reference
-└── data/ # Headless JSON Content Store (Single Source of Truth)
-├── profile.json # Founder Metadata, Stack Tags & Contact Channels
-├── services.json # Bento Capabilities & Responsive Spans
-├── portfolio.json # Technical Case Implementations & Tags
-└── industries.json # Commercial Verticals & Automation Models
+│   ├── css/
+│   │   └── style.css       # High-Fidelity Design System (Bento / Aurora / Spotlight)
+│   ├── js/
+│   │   ├── script.js       # UI Controllers (Pointer Spotlight, Drawer Traps, Year Sync)
+│   │   └── render.js       # Asynchronous Data Hydrator with Strict XSS Sanitization
+│   └── images/
+│       └── hero-preview.png # Live Platform Visual Reference
+└── data/                   # Headless JSON Content Store (Single Source of Truth)
+    ├── profile.json        # Founder Metadata, Stack Tags & Contact Channels
+    ├── services.json       # Bento Capabilities & Responsive Spans
+    ├── portfolio.json      # Technical Case Implementations & Tags
+    └── industries.json     # Commercial Verticals & Automation Models
 
 ---
 
