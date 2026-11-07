@@ -100,7 +100,7 @@ osmanbinabubakar.github.io/
     ├── services.json       # Bento Capabilities & Responsive Spans
     ├── portfolio.json      # Technical Case Implementations & Tags
     └── industries.json     # Commercial Verticals & Automation Models
-
+```
 ---
 
 ### Key Technical Properties:
