@@ -1,15 +1,3 @@
-/* ==========================================================================
-   AZ IT HUB
-   Brand Foundation:
-   - Void Obsidian:    #09090B
-   - Dark Chrome:      #121216
-   - Glass Surface:    rgba(18, 18, 24, 0.72)
-   - Border Ambient:   rgba(255, 255, 255, 0.08)
-   - Border Hover:     rgba(255, 148, 31, 0.45)
-   - Accent Neon:      #FF941F
-   - Accent Hot:       #FF5E00
-   ========================================================================== */
-
 :root {
   --bg-void: #09090B;
   --bg-surface: rgba(18, 18, 24, 0.72);
@@ -75,9 +63,6 @@ ul {
   z-index: 2;
 }
 
-/* ==========================================================================
-   AMBIENT AURORA LIGHT ENGINE
-   ========================================================================== */
 .aurora-bg {
   position: absolute;
   top: -120px;
@@ -110,9 +95,6 @@ ul {
   z-index: 1;
 }
 
-/* ==========================================================================
-   FLOATING ISLAND NAVBAR (Uiverse / Linear Style)
-   ========================================================================== */
 .island-nav-wrapper {
   position: sticky;
   top: 1.25rem;
@@ -187,9 +169,6 @@ ul {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
-/* ==========================================================================
-   BORDER-BEAM SHIMMER BUTTONS (Uiverse Component)
-   ========================================================================== */
 .btn-beam {
   position: relative;
   display: inline-flex;
@@ -256,9 +235,6 @@ ul {
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   HERO SECTION & METALLIC GRADIENT TYPE
-   ========================================================================== */
 .hero-section {
   padding: 5rem 0 4.5rem;
   position: relative;
@@ -346,9 +322,6 @@ ul {
   gap: 1rem;
 }
 
-/* ==========================================================================
-   LIVE PIPELINE VISUALIZER (Hero Node Architecture)
-   ========================================================================== */
 .pipeline-visualizer {
   background: linear-gradient(180deg, rgba(24, 24, 32, 0.8) 0%, rgba(14, 14, 18, 0.95) 100%);
   border: 1px solid var(--border-glass);
@@ -452,9 +425,6 @@ ul {
   border: 1px solid rgba(39, 201, 63, 0.2);
 }
 
-/* ==========================================================================
-   ACETERNITY-STYLE SPOTLIGHT CARDS
-   ========================================================================== */
 .spotlight-card {
   position: relative;
   background: var(--bg-card);
@@ -463,6 +433,7 @@ ul {
   padding: 2.25rem;
   overflow: hidden;
   transition: border-color 0.3s ease, transform 0.25s var(--ease-elastic);
+  width: 100%;
 }
 
 .spotlight-card::before {
@@ -489,13 +460,11 @@ ul {
 .card-content {
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
-/* ==========================================================================
-   2026 ASYMMETRICAL BENTO GRID
-   ========================================================================== */
 .section-pad {
-  padding: 6.5rem 0;
+  padding: 5rem 0;
   position: relative;
   z-index: 2;
 }
@@ -504,11 +473,20 @@ ul {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1.5rem;
+  width: 100%;
 }
 
-.bento-col-8 { grid-column: span 8; }
-.bento-col-4 { grid-column: span 4; }
-.bento-col-6 { grid-column: span 6; }
+.bento-col-1  { grid-column: span 1; }
+.bento-col-2  { grid-column: span 2; }
+.bento-col-3  { grid-column: span 3; }
+.bento-col-4  { grid-column: span 4; }
+.bento-col-5  { grid-column: span 5; }
+.bento-col-6  { grid-column: span 6; }
+.bento-col-7  { grid-column: span 7; }
+.bento-col-8  { grid-column: span 8; }
+.bento-col-9  { grid-column: span 9; }
+.bento-col-10 { grid-column: span 10; }
+.bento-col-11 { grid-column: span 11; }
 .bento-col-12 { grid-column: span 12; }
 
 .bento-badge {
@@ -522,7 +500,7 @@ ul {
 }
 
 .bento-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
@@ -551,9 +529,6 @@ ul {
   border-radius: var(--radius-capsule);
 }
 
-/* ==========================================================================
-   FOUNDER SPOTLIGHT CARD
-   ========================================================================== */
 .founder-bento {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
@@ -562,8 +537,8 @@ ul {
 }
 
 .avatar-badge-box {
-  width: 72px;
-  height: 72px;
+  width: 68px;
+  height: 68px;
   border-radius: 16px;
   background: linear-gradient(135deg, #1A1A22 0%, #0E0E12 100%);
   border: 1px solid rgba(255, 148, 31, 0.4);
@@ -574,12 +549,40 @@ ul {
   font-size: 1.5rem;
   font-weight: 900;
   color: var(--accent);
-  margin-bottom: 1.25rem;
 }
 
-/* ==========================================================================
-   MOBILE FULLSCREEN FROSTED DRAWER
-   ========================================================================== */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.industry-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 2rem;
+  transition: all 0.25s var(--ease-elastic);
+}
+
+.industry-card:hover {
+  border-color: var(--border-active);
+  transform: translateY(-4px);
+}
+
+.industry-card h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.65rem;
+}
+
+.industry-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 .menu-trigger {
   display: none;
   background: transparent;
@@ -645,9 +648,6 @@ ul {
   color: var(--text-pure);
 }
 
-/* ==========================================================================
-   MOBILE & TABLET ADAPTIVE QUERIES
-   ========================================================================== */
 @media (max-width: 992px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -656,7 +656,9 @@ ul {
   .founder-bento {
     grid-template-columns: 1fr;
   }
-  .bento-col-8, .bento-col-4, .bento-col-6 {
+  .bento-col-1, .bento-col-2, .bento-col-3, .bento-col-4,
+  .bento-col-5, .bento-col-6, .bento-col-7, .bento-col-8,
+  .bento-col-9, .bento-col-10, .bento-col-11, .bento-col-12 {
     grid-column: span 12;
   }
 }
