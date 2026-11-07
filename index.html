@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AZ IT HUB — Custom Software, ERP & Odoo Engineering</title>
+  <title>AZ IT HUB — Custom Software, ERP &amp; Odoo Engineering</title>
   
   <meta name="description" content="AZ IT HUB architects custom business software, Odoo ERP pipelines, fleet dispatch systems, and process automation by Osman Bin Abubakar.">
   <meta name="author" content="Osman Bin Abubakar">
 
-  <link rel="stylesheet" href="assets/css/styosmanbinabubakarle.css">
+  <link rel="canonical" href="https://osmanbinabubakar.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AZ IT HUB — Technology. Digital. Growth.">
+  <meta property="og:description" content="Custom software development, ERP workflows, and enterprise automation by Osman Bin Abubakar.">
+  <meta property="og:url" content="https://osmanbinabubakar.github.io/">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <script type="application/ld+json">
   {
@@ -18,7 +25,10 @@
     "founder": {
       "@type": "Person",
       "name": "Osman Bin Abubakar",
-      "jobTitle": "Software Engineer"
+      "jobTitle": "Software Engineer",
+      "email": "mailto:osmanalhasnoon@gmail.com",
+      "telephone": "+919700533269",
+      "url": "https://osmanbinabubakar.github.io"
     },
     "slogan": "Technology. Digital. Growth.",
     "url": "https://osmanbinabubakar.github.io/"
@@ -27,11 +37,9 @@
 </head>
 <body>
 
-  <!-- Ambient Background Illumination -->
   <div class="aurora-bg"></div>
   <div class="grid-overlay"></div>
 
-  <!-- Floating Island Navigation -->
   <header class="island-nav-wrapper">
     <div class="island-nav">
       <a href="index.html" class="nav-brand" aria-label="AZ IT HUB">
@@ -55,29 +63,27 @@
         </a>
       </div>
 
-      <button class="menu-trigger" id="menuTrigger" aria-label="Open Mobile Menu">
+      <button class="menu-trigger" id="menuTrigger" aria-label="Open Mobile Menu" aria-expanded="false">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="8" x2="20" y2="8"></line><line x1="4" y1="16" x2="20" y2="16"></line></svg>
       </button>
     </div>
   </header>
 
-  <!-- Mobile Fullscreen Drawer -->
-  <div class="mobile-overlay" id="mobileOverlay">
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
     <button class="mobile-close" id="mobileClose" aria-label="Close Mobile Menu">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
     <div class="mobile-links">
       <a href="index.html" class="mobile-link active">Home</a>
-      <a href="about.html" class="mobile-link">About Founder</a>
+      <a href="about.html" class="mobile-link">About</a>
       <a href="services.html" class="mobile-link">Services</a>
       <a href="industries.html" class="mobile-link">Industries</a>
       <a href="portfolio.html" class="mobile-link">Portfolio</a>
-      <a href="contact.html" class="mobile-link">Start a Project</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
     </div>
   </div>
 
   <main>
-    <!-- Hero Section -->
     <section class="hero-section">
       <div class="container">
         <div class="hero-grid">
@@ -105,7 +111,6 @@
             </div>
           </div>
 
-          <!-- Hero Live System Visualizer -->
           <div class="pipeline-visualizer">
             <div class="visualizer-top">
               <div class="window-pills">
@@ -174,7 +179,6 @@
       </div>
     </section>
 
-    <!-- Bento Grid Section: Populated from data/services.json -->
     <section class="section-pad">
       <div class="container">
         <div style="margin-bottom: 3.5rem;">
@@ -184,10 +188,8 @@
           </h2>
         </div>
 
-        <!-- Injected Dynamically by render.js -->
         <div class="bento-grid" id="bentoServicesContainer"></div>
 
-        <!-- Founder Spotlight: Populated from data/profile.json -->
         <div style="margin-top: 1.5rem;">
           <div class="spotlight-card bento-col-12">
             <div class="card-content founder-bento" id="founderBentoContent"></div>
@@ -196,7 +198,6 @@
       </div>
     </section>
 
-    <!-- Technical Portfolio: Populated from data/portfolio.json -->
     <section class="section-pad" style="padding-top: 0;">
       <div class="container">
         <div style="margin-bottom: 3rem;">
@@ -205,12 +206,10 @@
             Verified Solution Architectures.
           </h2>
         </div>
-        <!-- Injected Dynamically by render.js -->
         <div class="bento-grid" id="portfolioContainer"></div>
       </div>
     </section>
 
-    <!-- Industry Verticals: Populated from data/industries.json -->
     <section class="section-pad" style="padding-top: 0;">
       <div class="container">
         <div style="margin-bottom: 3rem;">
@@ -219,12 +218,10 @@
             Industry Context &amp; Solutions.
           </h2>
         </div>
-        <!-- Injected Dynamically by render.js -->
         <div class="industries-grid" id="industriesContainer"></div>
       </div>
     </section>
 
-    <!-- Bottom Action Capsule -->
     <section class="section-pad" style="padding-top: 0;">
       <div class="container">
         <div class="spotlight-card" style="text-align: center; padding: 4.5rem 2rem;">
@@ -241,7 +238,7 @@
                 <span>Start Direct Discussion</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
-              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+              <a href="https://linkedin.com/in/osman-bin-abubakar" target="_blank" rel="noopener noreferrer" class="btn-ghost">
                 <span>LinkedIn Profile</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
               </a>
@@ -252,19 +249,18 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer style="border-top: 1px solid var(--border-subtle); padding: 3rem 0; font-size: 0.85rem; color: var(--text-faint);">
     <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
       <div>
         &copy; <span id="currentYear"></span> AZ IT HUB — Osman Bin Abubakar.
       </div>
-      <div style="font-family: var(--font-mono); font-size: 0.78rem;">
-        HEADLESS JSON STATIC ARCHITECTURE • GITHUB PAGES
+      <div style="display: flex; gap: 1.25rem;">
+        <a href="https://linkedin.com/in/osman-bin-abubakar" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted);">LinkedIn</a>
+        <a href="https://github.com/osmanbinabubakar" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted);">GitHub</a>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="assets/js/script.js"></script>
   <script src="assets/js/render.js"></script>
 </body>
