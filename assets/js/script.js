@@ -1,56 +1,78 @@
+'use strict';
+
 /**
- * AZ IT HUB — 2026 Micro-Interactions
- * Spotlight Cursor Tracking, Mobile Drawer, and Dynamic Bindings.
+ * Global UI interaction controller.
+ * Handles viewport cursor tracking, mobile navigation state, and document metadata.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initSpotlightTracking();
-  initMobileDrawer();
-  initDynamicYear();
+  initCursorTracker();
+  initMobileNavigation();
+  initDocumentMetadata();
 });
 
-/* Aceternity-style Mouse Spotlight Tracker */
-function initSpotlightTracking() {
+/**
+ * Calculates pointer coordinates relative to card boundaries
+ * and updates CSS variables for hardware-accelerated radial masking.
+ */
+function initCursorTracker() {
   const cards = document.querySelectorAll('.spotlight-card');
-  
-  window.addEventListener('mousemove', (e) => {
+  if (!cards.length) return;
+
+  window.addEventListener('mousemove', (event) => {
+    const { clientX, clientY } = event;
     cards.forEach((card) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
+      const bounds = card.getBoundingClientRect();
+      const x = clientX - bounds.left;
+      const y = clientY - bounds.top;
+
       card.style.setProperty('--mouse-x', `${x}px`);
       card.style.setProperty('--mouse-y', `${y}px`);
     });
-  });
+  }, { passive: true });
 }
 
-/* Responsive Mobile Navigation Drawer */
-function initMobileDrawer() {
+/**
+ * Manages modal drawer state and keyboard navigation traps for mobile viewports.
+ */
+function initMobileNavigation() {
   const trigger = document.getElementById('menuTrigger');
   const overlay = document.getElementById('mobileOverlay');
-  const closeBtn = document.getElementById('mobileClose');
-  const mobileLinks = document.querySelectorAll('.mobile-link');
+  const closeButton = document.getElementById('mobileClose');
+  const links = document.querySelectorAll('.mobile-link');
 
   if (!trigger || !overlay) return;
 
-  const toggleDrawer = (isOpen) => {
+  const setDrawerState = (isOpen) => {
     overlay.classList.toggle('open', isOpen);
+    overlay.setAttribute('aria-hidden', String(!isOpen));
+    trigger.setAttribute('aria-expanded', String(isOpen));
     document.body.style.overflow = isOpen ? 'hidden' : '';
   };
 
-  trigger.addEventListener('click', () => toggleDrawer(true));
-  if (closeBtn) closeBtn.addEventListener('click', () => toggleDrawer(false));
+  trigger.addEventListener('click', () => setDrawerState(true));
 
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => toggleDrawer(false));
+  if (closeButton) {
+    closeButton.addEventListener('click', () => setDrawerState(false));
+  }
+
+  links.forEach((link) => {
+    link.addEventListener('click', () => setDrawerState(false));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && overlay.classList.contains('open')) {
+      setDrawerState(false);
+    }
   });
 }
 
-/* Dynamic Copyright Year */
-function initDynamicYear() {
-  const yearEl = document.getElementById('currentYear');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
+/**
+ * Synchronizes temporal footer attributes with client execution environment.
+ */
+function initDocumentMetadata() {
+  const yearElement = document.getElementById('currentYear');
+  if (yearElement) {
+    yearElement.textContent = String(new Date().getFullYear());
   }
 }
