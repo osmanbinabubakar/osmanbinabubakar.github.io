@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Logistics & Transport",
+    "description": "Shipment manifest tracking, dispatch coordination, and route status logs across regional hubs."
+  },
+  {
+    "title": "Chauffeur & Fleet Operations",
+    "description": "Driver assignment, trip tracking, passenger booking management, and automated invoicing."
+  },
+  {
+    "title": "Warehousing & Distribution",
+    "description": "Multi-location stock visibility, barcode registration, and automated minimum replenishment rules."
+  },
+  {
+    "title": "Retail & Wholesale Trade",
+    "description": "Multi-branch sales tracking, consolidated purchase orders, and supplier catalog synchronization."
+  },
+  {
+    "title": "Healthcare & Diagnostics",
+    "description": "Sample intake tracking, operational lab workflows, status notifications, and structured reporting."
+  },
+  {
+    "title": "Growing SMEs & Startups",
+    "description": "Eliminating disconnected spreadsheets and setting up clean foundational ERP/CRM tools on day one."
+  }
+]
