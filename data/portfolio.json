@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fleet-dispatch-system",
+    "category": "Operations Management",
+    "status": "Case Architecture",
+    "title": "Chauffeur & Fleet Coordination System",
+    "description": "Fleet dispatch, ride assignment, driver shift logging, and passenger invoicing workflows built for private transportation providers.",
+    "tags": ["Backend API", "Dispatch UI", "PostgreSQL"]
+  },
+  {
+    "id": "odoo-wms-pipeline",
+    "category": "Enterprise ERP",
+    "status": "Modular Architecture",
+    "title": "Odoo Custom Inventory & Order Pipeline",
+    "description": "Python modules extending standard Odoo workflows to support multi-stage order approval and dynamic stock tracking across warehouses.",
+    "tags": ["Python", "Odoo 16/17", "Workflow API"]
+  },
+  {
+    "id": "einvoicing-pipeline",
+    "category": "Compliance & Finance",
+    "status": "System Integration",
+    "title": "E-Invoicing & Order Processing Engine",
+    "description": "Automated XML/JSON invoice generator with schema validation, linking transaction pipelines directly into accounting software.",
+    "tags": ["ASP.NET Core", "REST API", "XML/JSON"]
+  },
+  {
+    "id": "workforce-shift-planner",
+    "category": "Human Capital & Operations",
+    "status": "Internal Architecture",
+    "title": "Workforce & Operational Shift Scheduler",
+    "description": "Rule-based employee shift assignment, attendance reconciliation, and operational coordination platform eliminating scheduling conflicts.",
+    "tags": ["C#", "SQL Server", "REST API"]
+  }
+]
