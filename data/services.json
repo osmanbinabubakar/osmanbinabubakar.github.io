@@ -1,0 +1,86 @@
+[
+  {
+    "id": "odoo-erp",
+    "moduleNumber": "Module 01",
+    "category": "ERP Architecture",
+    "title": "Odoo ERP Customization & Implementation",
+    "description": "We develop bespoke Python modules that customize standard Odoo workflows to reflect your exact inventory hierarchies, multi-warehouse stock allocations, and purchase approval chains.",
+    "span": 8,
+    "chips": [
+      "Odoo 16/17",
+      "Python",
+      "PostgreSQL",
+      "Inventory Workflows",
+      "Automated PO Processing"
+    ]
+  },
+  {
+    "id": "backend-software",
+    "moduleNumber": "Module 02",
+    "category": "Core Software",
+    "title": "Enterprise Backend Systems",
+    "description": "High-performance API engines and database architectures built with C# ASP.NET Core and Node.js for zero-downtime reliability.",
+    "span": 4,
+    "chips": [
+      "C# .NET",
+      "Node.js",
+      "REST APIs",
+      "Microservices"
+    ]
+  },
+  {
+    "id": "logistics-fleet",
+    "moduleNumber": "Module 03",
+    "category": "Fleet & Transport",
+    "title": "Chauffeur & Logistics Management",
+    "description": "Real-time driver assignment, passenger booking engines, shift records, and automated fleet trip auditing designed for transport operators.",
+    "span": 6,
+    "chips": [
+      "Fleet Dispatch",
+      "Driver UI",
+      "Audit Trails",
+      "Shift Logs"
+    ]
+  },
+  {
+    "id": "einvoicing-automation",
+    "moduleNumber": "Module 04",
+    "category": "Automation & Finance",
+    "title": "E-Invoicing & Process Automation",
+    "description": "Schema validation engines generating compliant tax invoices, eliminating duplicate ledger entries and human error in billing workflows.",
+    "span": 6,
+    "chips": [
+      "XML / JSON",
+      "E-Invoicing",
+      "Batch Pipelines",
+      "ERP Sync"
+    ]
+  },
+  {
+    "id": "web-mobile-portals",
+    "moduleNumber": "Module 05",
+    "category": "Frontends & Portals",
+    "title": "Web & Mobile Customer Portals",
+    "description": "Responsive operational tools, driver apps, and self-service customer portals built with React, Next.js, and cross-platform frameworks.",
+    "span": 6,
+    "chips": [
+      "React",
+      "Next.js",
+      "Mobile Applications",
+      "Role-Based Access"
+    ]
+  },
+  {
+    "id": "api-integrations",
+    "moduleNumber": "Module 06",
+    "category": "Connectivity",
+    "title": "System & Third-Party Integrations",
+    "description": "Connecting CRM platforms, payment gateways, e-commerce stores, and internal databases into a single unified data stream.",
+    "span": 6,
+    "chips": [
+      "Payment Gateways",
+      "Webhook Architecture",
+      "Data Synchronization"
+    ]
+  }
+]
