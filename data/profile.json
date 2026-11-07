@@ -1,0 +1,28 @@
+{
+  "founder": {
+    "name": "Osman Bin Abubakar",
+    "role": "Founder & Software Engineer",
+    "initials": "OA",
+    "statement": "Software should never force a business to alter effective manual habits into frustrating bureaucratic steps. We design digital systems around the actual speed, physical logistics, and daily demands of your team.",
+    "bioSummary": "Full-stack software engineer with deep practical expertise in business applications, ERP customizations, and operational dispatch platforms.",
+    "stack": [
+      "C# / ASP.NET Core",
+      "Python",
+      "Odoo ERP",
+      "PostgreSQL",
+      "TypeScript / React",
+      "REST APIs"
+    ]
+  },
+  "brand": {
+    "name": "AZ IT HUB",
+    "tagline": "TECHNOLOGY. DIGITAL. GROWTH.",
+    "headline": "YOUR BUSINESS.",
+    "subheadline": "OUR TECHNOLOGY.",
+    "lead": "We design custom software, Odoo ERP implementations, and automated logistics architectures that replace manual spreadsheets with high-speed, synchronized data pipelines."
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/",
+    "github": "https://github.com/GITHUBUSERNAME"
+  }
+}
