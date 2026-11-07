@@ -27,11 +27,11 @@
 </head>
 <body>
 
-  <!-- 2026 Background Illumination -->
+  <!-- Ambient Background Illumination -->
   <div class="aurora-bg"></div>
   <div class="grid-overlay"></div>
 
-  <!-- Floating Island Capsule Navigation -->
+  <!-- Floating Island Navigation -->
   <header class="island-nav-wrapper">
     <div class="island-nav">
       <a href="index.html" class="nav-brand" aria-label="AZ IT HUB">
@@ -55,14 +55,13 @@
         </a>
       </div>
 
-      <!-- Mobile Trigger -->
       <button class="menu-trigger" id="menuTrigger" aria-label="Open Mobile Menu">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="8" x2="20" y2="8"></line><line x1="4" y1="16" x2="20" y2="16"></line></svg>
       </button>
     </div>
   </header>
 
-  <!-- Mobile Fullscreen Frosted Drawer -->
+  <!-- Mobile Fullscreen Drawer -->
   <div class="mobile-overlay" id="mobileOverlay">
     <button class="mobile-close" id="mobileClose" aria-label="Close Mobile Menu">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -175,7 +174,7 @@
       </div>
     </section>
 
-    <!-- Asymmetric Bento Grid (Services & Architecture) -->
+    <!-- Bento Grid Section: Populated from data/services.json -->
     <section class="section-pad">
       <div class="container">
         <div style="margin-bottom: 3.5rem;">
@@ -185,98 +184,43 @@
           </h2>
         </div>
 
-        <div class="bento-grid">
-          <!-- Bento 1: Odoo ERP (Span 8) -->
-          <div class="spotlight-card bento-col-8">
-            <div class="card-content">
-              <span class="bento-badge">Module 01 • ERP Architecture</span>
-              <h3 class="bento-title">Odoo ERP Customization &amp; Implementation</h3>
-              <p class="bento-desc">
-                We develop bespoke Python modules that customize standard Odoo workflows to reflect your exact inventory hierarchies, multi-warehouse stock allocations, and purchase approval chains.
-              </p>
-              <div class="tech-chips">
-                <span class="chip">Odoo 16/17</span>
-                <span class="chip">Python</span>
-                <span class="chip">PostgreSQL</span>
-                <span class="chip">Inventory Workflows</span>
-                <span class="chip">Automated PO Processing</span>
-              </div>
-            </div>
-          </div>
+        <!-- Injected Dynamically by render.js -->
+        <div class="bento-grid" id="bentoServicesContainer"></div>
 
-          <!-- Bento 2: Custom Backend (Span 4) -->
-          <div class="spotlight-card bento-col-4">
-            <div class="card-content">
-              <span class="bento-badge">Module 02 • Core Software</span>
-              <h3 class="bento-title">Enterprise Backend Systems</h3>
-              <p class="bento-desc">
-                High-performance API engines built with C# ASP.NET Core and Node.js for zero-downtime reliability.
-              </p>
-              <div class="tech-chips">
-                <span class="chip">C# .NET</span>
-                <span class="chip">Node.js</span>
-                <span class="chip">REST APIs</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bento 3: Logistics & Chauffeur Dispatch (Span 6) -->
-          <div class="spotlight-card bento-col-6">
-            <div class="card-content">
-              <span class="bento-badge">Module 03 • Fleet &amp; Transport</span>
-              <h3 class="bento-title">Chauffeur &amp; Logistics Management</h3>
-              <p class="bento-desc">
-                Real-time driver assignment, passenger booking engines, shift records, and automated fleet trip auditing.
-              </p>
-              <div class="tech-chips">
-                <span class="chip">Fleet Dispatch</span>
-                <span class="chip">Driver UI</span>
-                <span class="chip">Audit Trails</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bento 4: E-Invoicing & Process Automation (Span 6) -->
-          <div class="spotlight-card bento-col-6">
-            <div class="card-content">
-              <span class="bento-badge">Module 04 • Automation &amp; Finance</span>
-              <h3 class="bento-title">E-Invoicing &amp; Process Automation</h3>
-              <p class="bento-desc">
-                Schema validation engines generating compliant tax invoices, eliminating duplicate ledger entries and human error.
-              </p>
-              <div class="tech-chips">
-                <span class="chip">XML / JSON</span>
-                <span class="chip">E-Invoicing</span>
-                <span class="chip">Batch Pipelines</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bento 5: Founder Strip (Span 12) -->
+        <!-- Founder Spotlight: Populated from data/profile.json -->
+        <div style="margin-top: 1.5rem;">
           <div class="spotlight-card bento-col-12">
-            <div class="card-content founder-bento">
-              <div>
-                <div class="avatar-badge-box">OA</div>
-                <h3 style="font-size: 1.35rem; font-weight: 800;">Osman Bin Abubakar</h3>
-                <p style="font-size: 0.85rem; font-family: var(--font-mono); color: var(--accent);">
-                  Founder &amp; Software Engineer
-                </p>
-              </div>
-              <div>
-                <span class="bento-badge">Engineering Perspective</span>
-                <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.25rem;">
-                  "Software should never force a business to alter effective manual habits into frustrating bureaucratic steps. We design digital systems around the actual speed, physical logistics, and daily demands of your team."
-                </p>
-                <div class="tech-chips">
-                  <span class="chip">C# / .NET Core</span>
-                  <span class="chip">Python / Odoo</span>
-                  <span class="chip">TypeScript / React</span>
-                  <span class="chip">PostgreSQL</span>
-                </div>
-              </div>
-            </div>
+            <div class="card-content founder-bento" id="founderBentoContent"></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Technical Portfolio: Populated from data/portfolio.json -->
+    <section class="section-pad" style="padding-top: 0;">
+      <div class="container">
+        <div style="margin-bottom: 3rem;">
+          <span class="bento-badge">Showcase</span>
+          <h2 style="font-size: clamp(1.85rem, 3.2vw, 2.4rem); font-weight: 800; letter-spacing: -0.03em;">
+            Verified Solution Architectures.
+          </h2>
+        </div>
+        <!-- Injected Dynamically by render.js -->
+        <div class="bento-grid" id="portfolioContainer"></div>
+      </div>
+    </section>
+
+    <!-- Industry Verticals: Populated from data/industries.json -->
+    <section class="section-pad" style="padding-top: 0;">
+      <div class="container">
+        <div style="margin-bottom: 3rem;">
+          <span class="bento-badge">Target Verticals</span>
+          <h2 style="font-size: clamp(1.85rem, 3.2vw, 2.4rem); font-weight: 800; letter-spacing: -0.03em;">
+            Industry Context &amp; Solutions.
+          </h2>
+        </div>
+        <!-- Injected Dynamically by render.js -->
+        <div class="industries-grid" id="industriesContainer"></div>
       </div>
     </section>
 
@@ -315,11 +259,13 @@
         &copy; <span id="currentYear"></span> AZ IT HUB — Osman Bin Abubakar.
       </div>
       <div style="font-family: var(--font-mono); font-size: 0.78rem;">
-        ZERO-BUDGET ARCHITECTURE • GITHUB PAGES DEPLOYED
+        HEADLESS JSON STATIC ARCHITECTURE • GITHUB PAGES
       </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/render.js"></script>
 </body>
 </html>
