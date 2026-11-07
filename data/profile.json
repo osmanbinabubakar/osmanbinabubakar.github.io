@@ -21,8 +21,14 @@
     "subheadline": "OUR TECHNOLOGY.",
     "lead": "We design custom software, Odoo ERP implementations, and automated logistics architectures that replace manual spreadsheets with high-speed, synchronized data pipelines."
   },
+  "contact": {
+    "email": "osmanalhasnoon@gmail.com",
+    "phoneDisplay": "+91 97005 33269",
+    "whatsappNumber": "919700533269"
+  },
   "links": {
-    "linkedin": "https://www.linkedin.com/",
-    "github": "https://github.com/GITHUBUSERNAME"
+    "linkedin": "https://linkedin.com/in/osman-bin-abubakar",
+    "github": "https://github.com/osmanbinabubakar",
+    "website": "https://osmanbinabubakar.github.io"
   }
 }
